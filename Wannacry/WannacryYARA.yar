@@ -1,14 +1,14 @@
-rule WannaCry_Ransomware
-
-{
-    meta:
-        description = "Detects WannaCry ransomware based on known indicators"
-        author = "James Harrington"
-        date = "2025-03-15"
-        reference = "https://www.wannacry.com"
-        malware_family = "Ransom.WannaCry"
-    
-       strings:
+rule WannaCry_Ransomware_Optimized {
+   meta:
+      description = "Detects WannaCry ransomware based on known indicators"
+      author = "James Harrington"
+      date = "2025-03-15"
+      reference = "https://www.wannacry.com"
+      malware_family = "Ransom.WannaCry"
+      hash1 = "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa"
+      hash2 = "9fe91d542952e145f2244572f314632d93eb1e8657621087b2ca7f7df2b0cb05"
+   
+   strings:
       // Core WannaCry identifiers
       $s1 = "WannaDecryptor" nocase
       $s2 = "WNcry@2ol7" nocase
@@ -27,11 +27,20 @@ rule WannaCry_Ransomware
       $net1 = "\\\\192.168.56.20\\IPC$" fullword wide
       $net2 = "\\\\172.16.99.5\\IPC$" fullword wide
       
+      // WannaCry Drop Locations & Registry Keys
+      $p1 = "C:\\Users\\Public\\qeriuwjhrf" fullword ascii
+      $p2 = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\tasksche.exe" fullword ascii
+      $p3 = "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run" fullword ascii
+      
       // Hex patterns from WannaCry executable
       $h1 = { 57 6F 72 6C 64 20 62 61 63 6B 75 70 20 64 65 63 72 79 70 74 6F 72 }
       $h2 = { 77 63 72 79 70 74 2E 64 65 63 }
-   
+      
+      // Opcode-level binary detection
+      $op1 = { 10 ac 72 0d 3d ff ff 1f ac 77 06 b8 01 00 00 00 }
+      $op2 = { 44 24 64 8a c6 44 24 65 0e c6 44 24 66 80 c6 44 }
+      
    condition:
       uint16(0) == 0x5a4d and filesize < 10MB and 
-      (any of ($s*) or any of ($x*) or any of ($h*))
+      (any of ($s*) or any of ($x*) or any of ($h*) or any of ($p*) or any of ($op*))
 }
