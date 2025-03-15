@@ -28,3 +28,6 @@ Step 4: I downloaded the malware on my VM.
 
 
 Step 5: Re-run the tenable scan.
+![image](https://github.com/user-attachments/assets/dfb60239-73f9-476c-b09e-bfeb5bf61d89)
+
+Success.
