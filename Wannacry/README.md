@@ -4,8 +4,8 @@ Step 1: I set up a VM to run the malware.
 
 Step 2: Create a new scan for Tenable and import the .yar file.
 
-![image](https://github.com/user-attachments/assets/c9338422-7665-4e5d-bf62-3bbb69c610a4)
 ![image](https://github.com/user-attachments/assets/1640f770-f2ee-4f0f-9d11-f43e98ae121f)
+![image](https://github.com/user-attachments/assets/c9338422-7665-4e5d-bf62-3bbb69c610a4)
 ![image](https://github.com/user-attachments/assets/eb79fce6-40e5-4dfa-b454-a25fa3ed7d73)
 ![image](https://github.com/user-attachments/assets/b004cfb2-9766-4779-a9d8-2345631c4a9b)
 
