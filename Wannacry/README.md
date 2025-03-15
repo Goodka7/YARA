@@ -2,9 +2,12 @@ Step 1: I set up a VM to run the malware.
 
 ![image](https://github.com/user-attachments/assets/fb549f2e-09fd-43ca-918e-f61a575396ca)
 
-Step 2: I ran a basic scan on my VM (YaraMalwareLab) to establish a baseline.
+Step 2: Create a new scan for Tenable.
 
-![image](https://github.com/user-attachments/assets/2476b59d-195d-402e-8266-50a3a0b3d600)
+![image](https://github.com/user-attachments/assets/c9338422-7665-4e5d-bf62-3bbb69c610a4)
+![image](https://github.com/user-attachments/assets/1640f770-f2ee-4f0f-9d11-f43e98ae121f)
+![image](https://github.com/user-attachments/assets/eb79fce6-40e5-4dfa-b454-a25fa3ed7d73)
+![image](https://github.com/user-attachments/assets/b004cfb2-9766-4779-a9d8-2345631c4a9b)
 
 
 Step 3: I imported the YARA rule into Tenable so I can scan the VM for the malware.
