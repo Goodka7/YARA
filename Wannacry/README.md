@@ -5,9 +5,16 @@ Step 1: I set up a VM to run the malware.
 Step 2: Create a new scan for Tenable and import the .yar file.
 
 ![image](https://github.com/user-attachments/assets/c9338422-7665-4e5d-bf62-3bbb69c610a4)
+![image](https://github.com/user-attachments/assets/f89dede8-f626-4ec7-8358-46bbdb30f722)
 ![image](https://github.com/user-attachments/assets/1640f770-f2ee-4f0f-9d11-f43e98ae121f)
 ![image](https://github.com/user-attachments/assets/eb79fce6-40e5-4dfa-b454-a25fa3ed7d73)
 ![image](https://github.com/user-attachments/assets/b004cfb2-9766-4779-a9d8-2345631c4a9b)
+![image](https://github.com/user-attachments/assets/b887360f-7e0c-4e2a-926a-f8883e85fbe8)
+![image](https://github.com/user-attachments/assets/c3401cef-ffdb-4918-bc46-fc27997cdcd4)
+![image](https://github.com/user-attachments/assets/ce631038-8dd5-4e72-b028-b92ff13f6c5f)
+![image](https://github.com/user-attachments/assets/7b398c4d-a50a-401b-af65-939fc890d461)
+![image](https://github.com/user-attachments/assets/09ae4596-fc9f-4b7e-b80e-55c424bafd2f)
+![image](https://github.com/user-attachments/assets/d087ec2e-bd16-4890-b393-1c17addfa51f)
 
 
 Step 3: I ran a baseline scan to show that the machine was not infected.
