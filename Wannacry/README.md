@@ -4,6 +4,9 @@ Step 1: I set up a VM to run the malware.
 
 Step 2: I ran a basic scan on my VM (YaraMalwareLab) to establish a baseline.
 
+![image](https://github.com/user-attachments/assets/2476b59d-195d-402e-8266-50a3a0b3d600)
+
+
 Step 3: I imported the YARA rule into Tenable so I can scan the VM for the malware.
 
 Wannacry YARA Rule:
