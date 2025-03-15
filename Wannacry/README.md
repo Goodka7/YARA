@@ -1,6 +1,7 @@
 Wannacry YARA Rule:
 
 rule WannaCry_Ransomware
+```
 {
     meta:
         description = "Detects WannaCry ransomware based on known indicators"
@@ -25,4 +26,4 @@ rule WannaCry_Ransomware
     condition:
         any of ($s*) or any of ($h*)
 }
-
+```
