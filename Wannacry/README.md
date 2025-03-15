@@ -2,7 +2,7 @@ Step 1: I set up a VM to run the malware.
 
 ![image](https://github.com/user-attachments/assets/fb549f2e-09fd-43ca-918e-f61a575396ca)
 
-Step 2: Create a new scan for Tenable.
+Step 2: Create a new scan for Tenable and import the .yar file.
 
 ![image](https://github.com/user-attachments/assets/c9338422-7665-4e5d-bf62-3bbb69c610a4)
 ![image](https://github.com/user-attachments/assets/1640f770-f2ee-4f0f-9d11-f43e98ae121f)
@@ -10,7 +10,7 @@ Step 2: Create a new scan for Tenable.
 ![image](https://github.com/user-attachments/assets/b004cfb2-9766-4779-a9d8-2345631c4a9b)
 
 
-Step 3: I imported the YARA rule into Tenable so I can scan the VM for the malware.
+Step 3: I ran a baseline scan to show that the machine was not infected.
 
 Wannacry YARA Rule:
 
