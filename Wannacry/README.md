@@ -1,3 +1,5 @@
+## Implementing a YARA rule for Wannacry.
+
 Step 1: I set up a VM to run the malware.
 
 ![image](https://github.com/user-attachments/assets/fb549f2e-09fd-43ca-918e-f61a575396ca)
